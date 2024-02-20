@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --main-background-color: #242943;
+    --sec-background-color: #31385c;
+    --main-text-color: #dddddd;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    color: var(--main-text-color);
+    background: var(--main-background-color);
+}
+.info.row{
+    min-height: 50vh;
+}
+picture{
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    height: 50vh;
+    width: 100%;
+}
+.main-img{
+    height: 100vh;
+    background-image: url(./images/baum.jpg);
+}
+.Gummi-Glen{
+    background-image: url(./images/GummiGlen-GreatHall.png);
+}
+.Schloss-Dunwyn{
+    background-image: url(./images/Schloss_Dunwyn-Flussansicht.png);
+}
+.Schloss-Drekmore{
+    background-image: url(./images/Schloss_Drekmore.png);
+}
+.info.text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-size: 16px;
+    color: var(--main-text-color);
+    line-height: 1.4;
+}
+.info.row.text:nth-child(2), 
+.info.row.text:nth-child(6),
+.info.row.text:nth-child(9){
+    background: var(--main-background-color);
+}
+.info.row.text:nth-child(4), 
+.info.row.text:nth-child(8){
+    background: var(--sec-background-color);
+}
+.info.row.top{
+    min-height: 50vh;
+}
+#info-check{
+    display: none;
+}
+.info-row-top-text-more{
+    display: none;
+    transition: 0.5s linear;
+}
+label{
+    display: inline-block;
+    color: var(--main-text-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 20px 20px;
+}
+#info-check:checked ~ .info-row-top-text-more{
+    display: block;
+}
+#info-check:checked ~ label{
+    visibility: hidden;
+}
+#info-check:checked ~ label::after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
+.info-h2{
+    display: inline;
+    padding: 15px;
+    margin: 20px;
+    border-bottom: 2px solid var(--main-text-color);
+}
+.info-p{
+    margin: 20px 20px 0px;
+}
+.info-p-more{
+    margin: 0px 20px;
+}
+
+@media (min-width: 850px) {
+    .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 100vh repeat(5, 50vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+.main-img{
+    grid-column: 1 /span 3;
+    grid-row: 1;
+    }
+.info.row.top.text{
+    grid-column: 1 /span 3;
+    grid-row: 2;
+    grid-template-rows: auto;
+    }
+.Gummi-Glen{
+    grid-column: 1;
+    grid-row: 3;
+}
+.info.row.two.text{
+    grid-column: 2 /span 2;
+    grid-row: 3;
+    }
+.Schloss-Dunwyn{
+    grid-column: 3;
+    grid-row: 4;
+    }
+.info.row.three.text{
+    grid-column: 1 /span 2;
+    grid-row: 4;
+    }
+.Schloss-Drekmore{
+    grid-column: 1;
+    grid-row: 5;
+    }
+.info.row.four.text{
+    grid-column: 2 /span 2;
+    grid-row: 5;
+    }
+.info.row.text.bottem{
+    grid-column: 1 /span 3;
+    grid-row: 6;
+    }
+}
