@@ -74,6 +74,17 @@
         grid-template-columns: repeat(12, 1fr);
       }
 
+      .grid-item.f1 {grid-column: span 1;}
+      .grid-item.f2 {grid-column: span 2;}
+      .grid-item.f3 {grid-column: span 3;}
       .grid-item.f4 {grid-column: span 4;}
+      .grid-item.f5 {grid-column: span 5;}
+      .grid-item.f6 {grid-column: span 6;}
+      .grid-item.f7 {grid-column: span 7;}
       .grid-item.f8 {grid-column: span 8;}
+      .grid-item.f9 {grid-column: span 9;}
+      .grid-item.f10 {grid-column: span 10;}
+      .grid-item.f11 {grid-column: span 11;}
+      .grid-item.f12 {grid-column: span 12;}
+
 }
