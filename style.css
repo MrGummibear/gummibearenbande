@@ -15,18 +15,18 @@ header{
     flex-direction: column;
     position: fixed;
     width: 100vw;
-    height: 10vh;
+    min-height: 10vh;
     color: var(--main-text-color);
     background: var(--main-background-color);
 }
 .info.row{
-    min-height: 50vh;
+    min-height: 35vh;
 }
 picture{
     display: block;
     background-size: cover;
     background-position: center center;
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
 }
 .main-img{
@@ -61,23 +61,12 @@ picture{
 .info.row.text:nth-child(8){
     background: var(--sec-background-color);
 }
-.info.row.top{
-    min-height: 50vh;
-}
 #info-check{
     display: none;
 }
 .info-row-top-text-more{
     display: none;
     transition: 0.5s linear;
-}
-label{
-    display: inline-block;
-    color: var(--main-text-color);
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 10px 20px 20px;
 }
 #info-check:checked ~ .info-row-top-text-more{
     display: block;
@@ -97,17 +86,25 @@ label{
     border-bottom: 2px solid var(--main-text-color);
 }
 .info-p{
-    margin: 20px 20px 0px;
+    margin: 0px 20px 30px;
 }
 .info-p-more{
     margin: 0px 20px;
 }
+label{
+    display: inline-block;
+    color: var(--main-text-color);
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px 20px 20px;
+}
 
-@media (min-width: 850px) {
+@media (min-width: 650px) {
     .info-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-rows: 100vh repeat(5, 50vh);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100vh repeat(5, minmax(50vh, auto));
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -118,7 +115,6 @@ label{
 .info.row.top.text{
     grid-column: 1 /span 3;
     grid-row: 2;
-    grid-template-rows: auto;
     }
 .Gummi-Glen{
     grid-column: 1;
