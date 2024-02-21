@@ -18,29 +18,36 @@ header{
     min-height: 10vh;
     color: var(--main-text-color);
     background: var(--main-background-color);
-}
-.info.row{
-    min-height: 35vh;
+    z-index: 2;
 }
 picture{
-    display: block;
-    background-size: cover;
+    display: flex;
+    justify-content: center;
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     min-height: 50vh;
     width: 100%;
 }
+img{
+    height: 100%;
+    animation: Bounce 3s ease 0s 1 normal forwards;
+}
 .main-img{
     height: 100vh;
-    background-image: url(./images/baum.jpg);
+    background-color: var(--sec-background-color);
 }
 .Gummi-Glen{
     background-image: url(./images/GummiGlen-GreatHall.png);
+    background-color: var(--sec-background-color);
 }
 .Schloss-Dunwyn{
     background-image: url(./images/Schloss_Dunwyn-Flussansicht.png);
+    background-color: var(--sec-background-color);
 }
 .Schloss-Drekmore{
     background-image: url(./images/Schloss_Drekmore.png);
+    background-color: var(--sec-background-color);
 }
 .info.text{
     display: flex;
@@ -51,6 +58,9 @@ picture{
     font-size: 16px;
     color: var(--main-text-color);
     line-height: 1.4;
+}
+.info.row{
+    min-height: 35vh;
 }
 .info.row.text:nth-child(2), 
 .info.row.text:nth-child(6),
@@ -81,7 +91,7 @@ picture{
 }
 .info-h2{
     display: inline;
-    padding: 15px;
+    padding: 15px 15px 15px 0px;
     margin: 20px;
     border-bottom: 2px solid var(--main-text-color);
 }
@@ -99,12 +109,19 @@ label{
     font-weight: bold;
     margin: 0px 20px 20px;
 }
-
+.h1-animation {
+    font-family: monospace;
+    overflow: hidden;
+    height:1.1em;
+    word-wrap: break-word;
+    white-space: nowrap;
+    animation: typing 4s steps(30) forwards;
+  }
 @media (min-width: 650px) {
     .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh repeat(5, minmax(50vh, auto));
+    grid-template-rows: 100vh repeat(5, minmax(40vh, auto));
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -145,3 +162,54 @@ label{
     grid-row: 6;
     }
 }
+@keyframes Bounce {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: scale(0.7);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: scale(0.84);
+	}
+
+	89% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: scale(0.95);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+@keyframes typing {
+    from {
+       width: 0;
+    }
+    to {
+       width: 30ch;
+    }
+ }
