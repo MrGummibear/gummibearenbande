@@ -65,11 +65,15 @@ body {
 
   a:visited, a, a:hover {text-decoration: none; color: black;}
 
-  .grid-item {position: relative;min-height: 520px;}
+  .grid-item {position: relative;
+    min-height: 520px;
+    background-size: cover;
+    background-position: center;
+  }
 
   .grid-item:hover {
-    opacity: 0.5;
-
+    opacity: 0.8;
+    animation: greyscale-fade-out 1.8s ease-in forwards;
     transition: opacity 1s ease-in-out;
   }
   .grid-item:hover .middle {
@@ -91,16 +95,7 @@ body {
     font-size: 16px;
     transition: font-size 0.5s ease; /* Übergangseffekt für die Schriftgröße */
   }
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+
   .grid-item img {
     opacity: 1;
     display: block;
@@ -109,6 +104,24 @@ body {
     transition: .5s ease;
     backface-visibility: hidden;
   }
+
+  .middle {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  @keyframes greyscale-fade-in {
+    0%   { -webkit-filter: grayscale(100%); }
+    100% { -webkit-filter: grayscale(0%); }
+ }
+ @keyframes greyscale-fade-out {
+  0%   { -webkit-filter: grayscale(0%); }
+  100% { -webkit-filter: grayscale(100%); }
+}
 
 .zummi {
     background-image: url(../images/Zummi/zummi_lg.jpg);background-repeat: no-repeat;
@@ -127,4 +140,17 @@ body {
 }
 .grammi {
     background-image: url(../images/Grammi/Grammi1.png);background-repeat: no-repeat;
+}
+
+@media (min-width: 580px) {
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
