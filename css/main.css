@@ -2,6 +2,7 @@
 @import url("section.css");
 @import url("banner.css");
 @import url("color.css");
+@import url("style.css");
 
 * {
     box-sizing: border-box;
