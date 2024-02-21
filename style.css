@@ -35,6 +35,7 @@ img{
 }
 .main-img{
     height: 100vh;
+    background-image: url(./images/hintergrund-top.jpg);
     background-color: var(--sec-background-color);
 }
 .Gummi-Glen{
@@ -109,7 +110,7 @@ label{
     font-weight: bold;
     margin: 0px 20px 20px;
 }
-.h1-animation {
+.h1-animation { 
     font-family: monospace;
     overflow: hidden;
     height:1.1em;
