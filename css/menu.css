@@ -65,6 +65,7 @@ header a:hover {
   }
 
   .menu-icon {
+
     grid-area: hamburger;
     cursor: pointer;
     display: flex;
@@ -75,6 +76,8 @@ header a:hover {
     user-select: none;
     visibility: visible;
     right: 0;
+    z-index: 2;
+    transform: scale(1.5);
   }
 
   .navicon {
@@ -104,6 +107,7 @@ header a:hover {
   }
 
   nav {
+    left: 0;
     max-height: 0;
     transition: max-height .2s ease-out;
     overflow: hidden;
@@ -131,7 +135,8 @@ header a:hover {
   }
 
   .menu-btn:checked ~ nav {
-    max-height: 240px;
+    max-height: 550px;
+    opacity: 0.8;
   }
 
   .menu-btn:checked ~ .menu-icon .navicon {
