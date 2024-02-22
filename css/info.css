@@ -25,8 +25,7 @@ picture{
     background: var(--sec-background-color);
 }
 #intro{
-    height: 100vh;
-    background: var(--main-background-color);
+    width: 100vw;
 }
 .Gummi-Glen{
     background-image: url(../images/GummiGlen-GreatHall.png);
@@ -118,9 +117,12 @@ label{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-#intro{
+#videoframe{
     grid-column: 1 /span 3;
     grid-row: 1;
+    }
+#intro{
+    height: 100vh;
     }
 .info.row.top.text{
     grid-column: 1 /span 3;
