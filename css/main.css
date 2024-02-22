@@ -256,22 +256,22 @@ body {
   }
   .main-section{
       position: absolute;
-      justify-content: left;
+      justify-content: center;
       z-index: 1;
       width: 100vw;
   }
   .sec-section{
       position: relative;
-      justify-content: right;
+      justify-content: center;
       max-height: 100vh;
       background: rgba(36, 41, 67, 0);
   }
   .profile-card{
       width: 25%;
-      right: 10%;
+      left: 20%;
   }
   .profile-img{
-      left: 30%;
+      right: 5%;
   }
   .cubbionly{
     width: 25%;
