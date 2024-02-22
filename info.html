@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Gummibärenbande Info Page</title>
 </head>
 <body>
-    <header><h1 class="h1-animation">Abenteuer der Gummibärenbande</h1></header>
+    <header id="header" class="alt">
+        <h1 id="nav-title"></h1>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon" />
+        </label>
+        <nav class='menu'>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="cubbi.html">Cubbi</a></li>
+               <li><a href="tummi.html">Tummmi</a></li>
+               <li><a href="zummi.hmtl">Zummi</a></li>
+               <li><a href="grammi.html">Grammi</a></li>
+               <li><a href="sunni.html">Sunni</a></li>
+               <li><a href="gruffi.html">Gruffi</a></li>
+
+           </ul>
+        </nav>
+     </header>
     <div class="info-grid">
         <picture class="main-img-backround">
             <source media="(min-width: 650px)" srcset="./images/gb-top3.png">

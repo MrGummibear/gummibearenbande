@@ -33,19 +33,19 @@ picture{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(./images/hintergrund-top.jpg);
+    background-image: url(../images/hintergrund-top.jpg);
     background-color: var(--sec-background-color);
 }
 .Gummi-Glen{
-    background-image: url(./images/GummiGlen-GreatHall.png);
+    background-image: url(../images/GummiGlen-GreatHall.png);
     background-color: var(--sec-background-color);
 }
 .Schloss-Dunwyn{
-    background-image: url(./images/Schloss_Dunwyn-Flussansicht.png);
+    background-image: url(../images/Schloss_Dunwyn-Flussansicht.png);
     background-color: var(--sec-background-color);
 }
 .Schloss-Drekmore{
-    background-image: url(./images/Schloss_Drekmore.png);
+    background-image: url(../images/Schloss_Drekmore.png);
     background-color: var(--sec-background-color);
 }
 .info.text{
@@ -125,7 +125,7 @@ label{
     grid-row-gap: 0px;
     }
 .main-img{
-    width: 85%;
+    width: 75%;
 }  
 .main-img-backround{
     align-items: flex-end;
