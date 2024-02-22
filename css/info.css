@@ -8,14 +8,6 @@
     --sec-background-color: #31385c;
     --main-text-color: #dddddd;
 }
-header{
-    position: fixed;
-    width: 100vw;
-    min-height: 10vh;
-    color: var(--main-text-color);
-    background: var(--main-background-color);
-    z-index: 2;
-}
 picture{
     display: flex;
     justify-content: center;
@@ -90,6 +82,7 @@ picture{
 }
 .info-h2{
     display: inline;
+    font-family: "Coaster";
     padding: 15px 15px 15px 0px;
     margin: 20px;
     border-bottom: 2px solid var(--main-text-color);
@@ -98,6 +91,7 @@ picture{
     margin: 0px 20px 30px;
 }
 .info-p-more{
+    
     margin: 0px 20px;
 }
 label{

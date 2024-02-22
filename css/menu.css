@@ -1,5 +1,5 @@
 #nav-title {
-    font-family: CooperFive;
+    font-family: "Coaster";
 }
 #nav-title {
     margin-right: auto;
@@ -14,8 +14,10 @@ header li {
 
 header a {
     text-decoration: none;
-    color: #555;
+    color: #c2c2c2;
     transition: all 0.3s ease 0s;
+    font-family: "Coaster";
+    font-size: 1.5em;
 }
 
 header a:hover {
@@ -57,7 +59,7 @@ header a:hover {
 
   nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(64, 64, 64);
   }
 
   .menu-btn, nav {
