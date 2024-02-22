@@ -3,6 +3,7 @@
 @import url("banner.css");
 @import url("color.css");
 @import url("info.css");
+@import url("profile.css");
 
 * {
     box-sizing: border-box;
@@ -245,4 +246,37 @@ body {
   .gummibearenbande-img{
     width: 80%;
 }
+}
+/* media für Profil-page*/
+@media (min-width: 1100px){
+  main{
+      display: flex;
+      align-items: center;
+      height: 100vh;
+  }
+  .main-section{
+      position: absolute;
+      justify-content: left;
+      z-index: 1;
+      width: 100vw;
+  }
+  .sec-section{
+      position: relative;
+      justify-content: right;
+      max-height: 100vh;
+      background: rgba(36, 41, 67, 0);
+  }
+  .profile-card{
+      width: 25%;
+      right: 10%;
+  }
+  .profile-img{
+      left: 30%;
+  }
+  .cubbionly{
+    width: 25%;
+  }
+  .tummionly{
+    width: 30%;
+  }
 }

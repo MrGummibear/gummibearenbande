@@ -22,27 +22,35 @@ header a {
 
 ul li:nth-child(1) a:hover {
   color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #FFFFFF;
 }
 ul li:nth-child(2) a:hover {
   color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #FFFFFF;
 }
 ul li:nth-child(3) a:hover {
   color: rgb(238, 112, 240);
+  text-shadow: 0 0 10px rgb(238, 112, 240);
 }
 ul li:nth-child(4) a:hover {
-  color: rgb(112, 159, 240);
+  color: rgb(238, 112, 240);
+  text-shadow: 0 0 10px rgb(238, 112, 240);
 }
 ul li:nth-child(5) a:hover {
   color: rgb(157, 112, 240);
+  text-shadow: 0 0 10px rgb(157, 112, 240);
 }
 ul li:nth-child(6) a:hover {
   color: rgb(210, 110, 64);
+  text-shadow: 0 0 10px rgb(210, 110, 64);
 }
 ul li:nth-child(7) a:hover {
   color: rgb(240, 229, 112);
+  text-shadow: 0 0 10px rgb(240, 229, 112);
 }
 ul li:nth-child(8) a:hover {
   color: rgb(130, 68, 27);
+  text-shadow: 0 0 10px rgb(130, 68, 27);
 }
 
 
