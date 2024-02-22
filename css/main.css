@@ -24,7 +24,7 @@ body {
     src: url("./font/coaster.shadow.ttf");
   }
 
-#wrapper {
+/*#wrapper {
  & header {
     display: flex;
     justify-content: flex-end;
@@ -38,7 +38,7 @@ body {
     transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
     padding-top: 3.25em;
  }
-}
+}*/
 
 #header.alt {
     transition: opacity 2.5s ease;
@@ -72,8 +72,10 @@ body {
     z-index: 2;
     animation: Bounce 3s ease 0s 1 normal forwards;
   }
-  a:visited, a, a:hover {text-decoration: none; color: #ffffff;}
-
+  a, a:hover {text-decoration: none; color: #ffffff;}
+  .menu ul li a.active {
+    color: rgb(255, 255, 255);
+  }
   .grid-item {position: relative;
     min-height: 520px;
     background-size: cover;
