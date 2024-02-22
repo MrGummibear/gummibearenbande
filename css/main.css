@@ -73,11 +73,12 @@ body {
     background-position: center;
   }
 
-  .grid-item:hover {
+  /* .grid-item:hover {
     opacity: 0.8;
     animation: greyscale-fade-out 1.8s ease-in forwards;
     transition: opacity 1s ease-in-out;
-  }
+  } */
+
   .grid-item:hover .middle {
     opacity: 1;
   }
@@ -116,32 +117,102 @@ body {
     text-align: center;
   }
 
-  @keyframes greyscale-fade-in {
+.cubbi .over{
+  width: 100%;
+  height: 100%;
+  background-color: #6279b8;
+  opacity: 0.9;
+  transition: 1s ease-in-out;
+}
+
+.cubbi .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+.tummi .over{
+  width: 100%;
+  height: 100%;
+  background-color: #496f5d;
+  opacity: 0.9;
+  transition: 1s ease-in-out;
+}
+
+.tummi .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+.zummi .over{
+  width: 100%;
+  height: 100%;
+  background-color: #4c9f70;
+  opacity: 0.9;
+  transition: 1s ease-in-out;
+}
+.zummi .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.grammi .over{
+  width: 100%;
+  height: 100%;
+  background-color: #8ea4d2;
+  opacity: 0.9;
+  transition: 1s ease-in-out;
+}
+.grammi .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.sunni .over{
+  width: 100%;
+  height: 100%;
+  background-color: #49516f;
+  opacity: 0.9;
+  transition: 1s ease-in-out;
+}
+.gruffi .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+.gruffi .over{
+  width: 100%;
+  height: 100%;
+  background-color: #496f5d;
+  opacity: 0.9;
+  transition: 1s ease-in-out;
+}
+.sunni .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
+  /* @keyframes greyscale-fade-in {
     0%   { -webkit-filter: grayscale(100%); }
     100% { -webkit-filter: grayscale(0%); }
  }
  @keyframes greyscale-fade-out {
   0%   { -webkit-filter: grayscale(0%); }
   100% { -webkit-filter: grayscale(100%); }
-}
+} */
 
 .zummi {
-    background-image: url(../images/Zummi/zummi_lg.jpg);background-repeat: no-repeat;
+    background-image: url(../images/GummiBears/Zummi/ZummiComplete.png);background-repeat: no-repeat;
 }
-.cubbi {
-    background-image: url(../images/cubbi/cubbi1.png);background-repeat: no-repeat;
+.cubbi {  
+    background-image: url(../images/GummiBears/Cubbi/CubbiComplete.png);background-repeat: no-repeat;
 }
 .tummi {
-    background-image: url(../images/tummi/tummi_lg.jpg);background-repeat: no-repeat;
+    background-image: url(../images/GummiBears/Tummi/TummiComplete.png);background-repeat: no-repeat;
 }
 .sunni {
-    background-image: url(../images/sunni/Sunni1.png);background-repeat: no-repeat;
+    background-image: url(../images/GummiBears/Sunni/SunniComplete.png);background-repeat: no-repeat;
 }
 .gruffi {
-    background-image: url(../images/gruffi/gruffi1.png);background-repeat: no-repeat;
+    background-image: url(../images/GummiBears/Gruffi/GruffiComplete.png);background-repeat: no-repeat;
 }
 .grammi {
-    background-image: url(../images/Grammi/Grammi1.png);background-repeat: no-repeat;
+    background-image: url(../images/GummiBears/Grammy/GrammyComplete.png);background-repeat: no-repeat;
 }
 
 @media (min-width: 580px) {
@@ -154,5 +225,10 @@ body {
     width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  .over {;
+    display: none;
   }
 }
