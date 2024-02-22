@@ -9,10 +9,6 @@
     --main-text-color: #dddddd;
 }
 header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     position: fixed;
     width: 100vw;
     min-height: 10vh;
@@ -29,11 +25,13 @@ picture{
     min-height: 50vh;
     width: 100%;
 }
-img{
-    height: 100%;
+.main-img{
+    width: 100%;
     animation: Bounce 3s ease 0s 1 normal forwards;
 }
-.main-img{
+.main-img-backround{
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-image: url(./images/hintergrund-top.jpg);
     background-color: var(--sec-background-color);
@@ -127,6 +125,10 @@ label{
     grid-row-gap: 0px;
     }
 .main-img{
+    width: 85%;
+}  
+.main-img-backround{
+    align-items: flex-end;
     grid-column: 1 /span 3;
     grid-row: 1;
     }
