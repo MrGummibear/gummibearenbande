@@ -230,7 +230,7 @@ body {
   }
 }
 @media (max-width: 580px) {
-  .over {;
+  .over {
     display: none;
   }
 }
