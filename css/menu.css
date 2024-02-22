@@ -83,7 +83,7 @@ header a:hover {
   }
 
   .navicon {
-    background: #333;
+    background: #fff;
     display: block;
     height: 2px;
     width: 18px;
@@ -99,7 +99,7 @@ header a:hover {
   }
 
   .navicon:before, .navicon:after {
-    background: #333;
+    background: #fff;
     display: block;
     width: 100%;
     height: 100%;
@@ -147,10 +147,14 @@ header a:hover {
 
   .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
+    background-color: #000;
   }
 
-  .menu-btn:checked ~ .menu-icon .navicon:after {
+  .menu-btn:checked ~ .menu-icon .navicon:after
+
+  {
     transform: rotate(45deg);
+    background-color: #000;
   }
 
   .menu-btn:checked ~ .menu-icon .navicon:before,
