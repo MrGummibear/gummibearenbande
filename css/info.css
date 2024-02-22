@@ -17,16 +17,16 @@ picture{
     min-height: 50vh;
     width: 100%;
 }
-.main-img{
-    width: 100%;
-    animation: Bounce 3s ease 0s 1 normal forwards;
-}
-.main-img-backround{
+#videoframe{
+    display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-image: url(../images/hintergrund-top.jpg);
-    background-color: var(--sec-background-color);
+    width: 100vw;
+    background: var(--sec-background-color);
+}
+#intro{
+    height: 100vh;
+    background: var(--main-background-color);
 }
 .Gummi-Glen{
     background-image: url(../images/GummiGlen-GreatHall.png);
@@ -118,11 +118,7 @@ label{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-.main-img{
-    width: 75%;
-}  
-.main-img-backround{
-    align-items: flex-end;
+#intro{
     grid-column: 1 /span 3;
     grid-row: 1;
     }
