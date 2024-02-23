@@ -113,7 +113,7 @@ label{
     .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100vh repeat(5, minmax(40vh, auto));
+    grid-template-rows: 100vh repeat(6, minmax(40vh, auto));
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
@@ -152,9 +152,17 @@ label{
     grid-column: 2 /span 2;
     grid-row: 5;
     }
+.gummibeerensaft{
+    grid-column: 3;
+    grid-row: 6;
+}
+.info.row.five.text{
+    grid-column: 1 /span 2;
+    grid-row: 6;
+    }
 .info.row.text.bottem{
     grid-column: 1 /span 3;
-    grid-row: 6;
+    grid-row: 7;
     }
 }
 @keyframes Bounce {
