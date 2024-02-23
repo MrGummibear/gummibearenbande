@@ -60,6 +60,18 @@ main{
 .tummionly{
     width: 90%;
 }
+.zummionly{
+    width: 90%;
+}
+.grammionly{
+    width: 50%;
+}
+.sunnionly{
+    width: 70%;
+}
+.gruffionly{
+    width: 65%;
+}
 table{
     text-align: left;
     margin: 30px;
