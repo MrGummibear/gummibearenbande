@@ -175,6 +175,10 @@ body {
   transition: 1s ease-in-out;
   opacity: 0;
 }
+.sunni .over:hover{
+  transition: 1s ease-in-out;
+  opacity: 0;
+}
 .sunni .over{
   width: 100%;
   height: 100%;
@@ -193,10 +197,7 @@ body {
   opacity: 0.9;
   transition: 1s ease-in-out;
 }
-.sunni .over:hover{
-  transition: 1s ease-in-out;
-  opacity: 0;
-}
+
   /* @keyframes greyscale-fade-in {
     0%   { -webkit-filter: grayscale(100%); }
     100% { -webkit-filter: grayscale(0%); }
