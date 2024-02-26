@@ -99,7 +99,7 @@ picture{
     
     margin: 0px 20px;
 }
-label{
+.readmore{
     display: inline-block;
     color: var(--main-text-color);
     text-decoration: underline;
