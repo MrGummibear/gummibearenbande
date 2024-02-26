@@ -21,11 +21,11 @@ picture{
     display: flex;
     justify-content: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: var(--sec-background-color);
 }
 #intro{
-    width: 100vw;
+    width: 100%;
 }
 .Gummi-Glen{
     background-image: url(../images/GummiGlen-GreatHall.png);
