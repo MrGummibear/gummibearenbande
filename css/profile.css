@@ -55,19 +55,21 @@ main{
     animation: moveAndScale 5s forwards;
 }
 .cubbionly{
-    width: 75%;
+    width: 80%;
 }
 .tummionly{
     width: 90%;
+    right: -10%;
 }
 .zummionly{
-    width: 90%;
+    width: 95%;
+    right: 10%;
 }
 .grammionly{
-    width: 50%;
+    width: 75%;
 }
 .sunnionly{
-    width: 70%;
+    width: 80%;
 }
 .gruffionly{
     width: 65%;
