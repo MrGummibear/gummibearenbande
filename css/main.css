@@ -242,6 +242,45 @@ body {
     display: none;
   }
 }
+@media (min-width: 750px) {
+  .gummibearenbande-img{
+    width: 75%;
+}
+  .gruffionly{
+    width: auto;
+    height: 80%;
+    bottom: 30px;
+}
+.cubbionly{
+  height: 80%;
+  width: auto;
+  right: 0%;
+  bottom: 25px;
+}
+.tummionly{
+  height: 80%;
+  width: auto;
+  right: -5%;
+  bottom: 25px;
+}
+.zummionly{
+  height: 80%;
+  width: auto;
+  right: 10%;
+  bottom: 25px;
+}
+.grammionly{
+  height: 80%;
+  width: auto;
+  bottom: 30px;
+}
+.sunnionly{
+  height: 80%;
+  width: auto;
+  right: 10%;
+  bottom: 25px;
+}
+}
 @media (min-width: 1200px) {
   .gummibearenbande-img{
     width: 80%;
@@ -274,23 +313,38 @@ body {
       right: 5%;
   }
   .cubbionly{
-    width: 25%;
+    height: 60%;
+    width: auto;
+    right: 5%;
+    bottom: 100px;
   }
   .tummionly{
-    width: 30%;
+    height: 70%;
+    width: auto;
+    right: 5%;
+    bottom: 100px;
   }
   .zummionly{
-    width: 30%;
-    right: 12%;
+    height: 65%;
+    width: auto;
+    right: 10%;
+    bottom: 100px;
   }
   .grammionly{
-    width: 15%;
+    height: 60%;
+    width: auto;
+    right: 10%;
+    bottom: 100px;
   }
   .sunnionly{
-    width: 20%;
-    right: 10%;
+    height: 60%;
+    width: auto;
+    right: 15%;
+    bottom: 80px;
   }
   .gruffionly{
-    width: 18%;
+    height: 65%;
+    width: auto;
+    bottom: 100px;
   }
 }
