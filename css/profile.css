@@ -36,7 +36,7 @@ main{
     border: 2px solid rgba(30, 35, 60, 0.18);
     color: #fff;
     opacity: 0; /* Anfangs unsichtbar machen */
-    animation: fadeIn 3s ease-in-out 3s forwards; /* Animation starten nach 5 Sekunden */
+    animation: fadeIn 1s ease-in-out 0.5s forwards; /* Animation starten nach 5 Sekunden */
 }
 .solo-baum{
     position: absolute;
@@ -52,7 +52,7 @@ main{
     bottom: 100px;
     transform-origin: left top;
     opacity: 0;
-    animation: moveAndScale 5s forwards;
+    animation: moveAndScale 4s forwards;
 }
 .cubbionly{
     width: 80%;
