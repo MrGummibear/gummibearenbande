@@ -76,6 +76,29 @@ body{
     z-index: 2;
     animation: Bounce 3s ease 0s 1 normal forwards;
   }
+
+  .more {
+    position: absolute;
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    ;
+  }
+  .moreInner {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .moreInner p {
+    
+    font-family: "Coaster";
+  }
+  
+
   a, a:hover {text-decoration: none; color: #ffffff;}
   .menu ul li a.active {
     color: rgb(255, 255, 255);
