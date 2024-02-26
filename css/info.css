@@ -14,18 +14,18 @@ picture{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 50%;
     width: 100%;
 }
 #videoframe{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background: var(--sec-background-color);
 }
 #intro{
-    width: 100vw;
+    width: 100%;
 }
 .Gummi-Glen{
     background-image: url(../images/GummiGlen-GreatHall.png);
