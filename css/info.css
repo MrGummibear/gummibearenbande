@@ -54,7 +54,7 @@ picture{
     line-height: 1.4;
 }
 .info.row{
-    min-height: 35vh;
+    min-height: 35%;
 }
 .info.row.text:nth-child(2), 
 .info.row.text:nth-child(6),
@@ -128,7 +128,7 @@ picture{
     grid-row: 1;
     }
 #intro{
-    height: 100vh;
+    height: 100%;
     }
 .info.row.top.text{
     grid-column: 1 /span 3;

@@ -295,18 +295,18 @@ body{
   main{
       display: flex;
       align-items: center;
-      height: 100vh;
+      height: 100%;
   }
   .main-section{
       position: absolute;
       justify-content: center;
       z-index: 1;
-      width: 100vw;
+      width: 100%;
   }
   .sec-section{
       position: relative;
       justify-content: center;
-      max-height: 100vh;
+      max-height: 100%;
       background: rgba(36, 41, 67, 0);
   }
   .profile-card{
