@@ -94,8 +94,12 @@ body{
   }
 
   .moreInner p {
-
+    font-size: 20px;
     font-family: "Coaster";
+  }
+  i {
+    font-size: 25px;
+    animation: slide 1s linear 0s infinite alternate both;
   }
 
 
@@ -251,7 +255,15 @@ body{
 .grammi {
     background-image: url(../images/GummiBears/Grammy/GrammyComplete.png);background-repeat: no-repeat;
 }
+@keyframes slide {
+	0% {
+		transform: translateY(0);
+	}
 
+	100% {
+		transform: translateY(10px);
+	}
+}
 @media (min-width: 580px) {
   .middle {
     transition: .5s ease;
@@ -271,7 +283,7 @@ body{
 }
 @media (min-width: 750px) {
   .gummibearenbande-img{
-    width: 75%;
+    width: 70%;
 }
   .gruffionly{
     width: auto;
@@ -310,7 +322,7 @@ body{
 }
 @media (min-width: 1200px) {
   .gummibearenbande-img{
-    width: 80%;
+    width: 75%;
 }
 }
 /* media für Profil-page*/
