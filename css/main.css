@@ -89,15 +89,15 @@ body{
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1.8);
     text-align: center;
   }
-  
+
   .moreInner p {
-    
+
     font-family: "Coaster";
   }
-  
+
 
   a, a:hover {text-decoration: none; color: #ffffff;}
   .menu ul li a.active {
@@ -236,7 +236,7 @@ body{
 .zummi {
     background-image: url(../images/GummiBears/Zummi/ZummiComplete.png);background-repeat: no-repeat;
 }
-.cubbi {  
+.cubbi {
     background-image: url(../images/GummiBears/Cubbi/CubbiComplete.png);background-repeat: no-repeat;
 }
 .tummi {
