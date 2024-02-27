@@ -14,14 +14,14 @@ picture{
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 50%;
     width: 100%;
 }
 #videoframe{
     display: flex;
     justify-content: center;
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+     width: 100%;
     background: var(--sec-background-color);
 }
 #intro{
@@ -56,12 +56,12 @@ picture{
 .info.row{
     min-height: 35vh;
 }
-.info.row.text:nth-child(2), 
+.info.row.text:nth-child(2),
 .info.row.text:nth-child(6),
 .info.row.text:nth-child(10){
     background: var(--main-background-color);
 }
-.info.row.text:nth-child(4), 
+.info.row.text:nth-child(4),
 .info.row.text:nth-child(8),
 .info.row.text:nth-child(11)
 {
@@ -96,10 +96,10 @@ picture{
     margin: 0px 20px 30px;
 }
 .info-p-more{
-    
+
     margin: 0px 20px;
 }
-label{
+.readmore{
     display: inline-block;
     color: var(--main-text-color);
     text-decoration: underline;
@@ -107,7 +107,7 @@ label{
     font-weight: bold;
     margin: 0px 20px 20px;
 }
-.h1-animation { 
+.h1-animation {
     font-family: monospace;
     overflow: hidden;
     height:1.1em;
